@@ -7,15 +7,15 @@ export const headerData = {
       links: [
         {
           text: 'Sass',
-          href: getPermalink('/landing/saas'),
+          href: getPermalink('#'),
         },
         {
           text: 'Startup',
-          href: getPermalink('/landing/startup'),
+          href: getPermalink('#'),
         },
         {
           text: 'Mobile App',
-          href: getPermalink('/landing/mobile-app'),
+          href: getPermalink('#'),
         },
       ],
     },
@@ -57,13 +57,13 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-  actions: [{ type: 'button', text: 'Download', href: 'https://github.com/onwidget/astrowind' }],
+  actions: [{ type: 'button', text: 'Visit me', href: 'https://github.com/YishayRE' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'Producto',
       links: [
         { text: 'Features', href: '#' },
         { text: 'Security', href: '#' },
@@ -75,7 +75,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Platform',
+      title: 'Plataforma',
       links: [
         { text: 'Developer API', href: '#' },
         { text: 'Partners', href: '#' },
@@ -85,7 +85,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Support',
+      title: 'Soporte',
       links: [
         { text: 'Docs', href: '#' },
         { text: 'Community Forum', href: '#' },
@@ -95,7 +95,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Company',
+      title: 'Compañia',
       links: [
         { text: 'About', href: '#' },
         { text: 'Blog', href: '#' },
@@ -116,10 +116,10 @@ export const footerData = {
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/YishayRE/' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm"></span>
+    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/YishayRE/"> YishayJS </a> · All rights reserved.
   `,
 };
