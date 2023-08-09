@@ -1,4 +1,4 @@
-import defaultImage from './assets/images/default.jpeg';
+import defaultImage from './assets/images/logos/sinCirculo.png';
 
 const CONFIG = {
   name: 'Zempoala',
