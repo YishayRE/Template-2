@@ -62,6 +62,7 @@ const {
       aria-label="Main navigation"
     >
       <ul class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center w-full md:w-auto text-xl md:text-base">
+        <!--
         {
           links.map(({ text, href, links }) => (
             <li class={links?.length ? 'dropdown' : ''}>
@@ -94,12 +95,13 @@ const {
             </li>
           ))
         }
+         -->
       </ul>
     </nav>
     <div class:list={[{ 'ml-auto': position === 'left' }, 'md:self-center flex items-center md:mb-0']}>
       <div class="hidden items-center md:flex">
         {showToggleTheme && <ToggleTheme iconClass="w-5 h-5" />}
-
+        <!--
         {
           showRssFeed && (
             <a
@@ -130,6 +132,7 @@ const {
             ''
           )
         }
+         -->
       </div>
     </div>
   </div>

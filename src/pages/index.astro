@@ -25,8 +25,8 @@ const meta = {
 
   <Hero
     callToAction={{ text: 'Comprar', href: '#', icon: 'tabler:basket' }}
-    callToAction2={{ text: 'Learn more', href: 'https://www.gob.mx/agricultura/es/articulos/pulque-bebida-de-dioses' }}
-    image={{ src: import('~/assets/images/hero.png'), alt: 'AstroWind Hero Image' }}
+    callToAction2={{ text: 'Lee más', href: 'https://www.gob.mx/agricultura/es/articulos/pulque-bebida-de-dioses' }}
+    image={{ src: import('~/assets/images/logos/circulo.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
       <span class="text-accent dark:text-white highlight">Pulque</span> la bebida de los dioses </Fragment>
@@ -48,8 +48,8 @@ const meta = {
 
   <Features
     highlight="Conócenos"
-    title="Todo sobre nuestra bebida"
-    subtitle="El pulque es una bebida alcohólica de origen prehispánico que se obtiene de las pencas del maguey y se elabora a partir de la fermentación del mucílago (sustancia orgánica de textura viscosa, propia de algunos vegetales), popularmente conocido como 'aguamiel'"
+    title="Todo sobre nuestro destilado"
+    subtitle="El pulque es una bebida prehispánica que ha experimentado conforme a los años una evolución para llegar a ser un destilado. El destilado Zempoala es un doble destilación y con una graduación alcohólica de 42º, pensando en que esta bebida se exprese y no se rebaje para no perder sus propiedades, notas y aromas emblemáticos del pulque hidalguense."
     items={[
       [
         {
@@ -95,7 +95,8 @@ const meta = {
   />
 
   <!-- Content Widget **************** -->
-
+  
+<!--
   <Content
     highlight="Aún más"
     title="¿Qué es nuestro producto?"
@@ -127,9 +128,11 @@ const meta = {
       tacimates.
     </Fragment>
   </Content>
+-->
 
   <!-- Content Widget **************** -->
 
+<!--
   <Content
     isReversed
     isAfterContent
@@ -158,6 +161,7 @@ const meta = {
       alt: 'Vintage Image',
     }}
   />
+-->
 
   <!-- Steps Widget ****************** -->
 
@@ -165,26 +169,26 @@ const meta = {
     title="Línea de tiempo de producción"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Producto</span>',
+        title: '1: <span class="font-medium">Materia prima</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula.',
-        icon: 'tabler:package',
+          'Se realiza el raspado del agave salmiana, posteriormente va a dar mucílago mejor conocido como agua miel y se recolecta.',
+        icon: 'tabler:plant-2',
       },
       {
-        title: 'Step 2: <span class="font-medium">Producción</em>',
+        title: '2: <span class="font-medium">Primer destilación</em>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.',
-        icon: 'tabler:letter-case',
+          'Se deja fermentar en tinacales para posteriormente pasarlo a un alambique de cobre árabe artesanal, el cual, es calentado con leña de encino. Cuando obtenemos el destilado hacemos una separación de cabeza y cola, obteniendo ahí sólamente el corazón para tener un alcohol más puro.',
+        icon: 'tabler:flask-2',
       },
       {
-        title: 'Step 3: <span class="font-medium">Embotellado</span>',
+        title: '3: <span class="font-medium">Segunda destilación</span>',
         description:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.',
-        icon: 'tabler:paint',
+          'En la segunda destilación de pone únicamente el corazón en el alambique para nuevamente calentarlo. Se vuelve a llevar a cabo el proceso de quitar la cola y cabeza para dejar solo el corazón.',
+        icon: 'tabler:flask-2',
       },
       {
-        title: 'Listo',
-        icon: 'tabler:check',
+        title: 'Embotellado y listo para ti',
+        icon: 'tabler:bottle',
       },
     ]}
     image={{
@@ -192,9 +196,16 @@ const meta = {
       alt: 'Steps image',
     }}
   />
+  <!--
+    building-factory-2
+    droplets
+    filter
+    flask-2
+   -->
 
   <!-- Features2 Widget ************** -->
 
+<!--
   <Features2
     title="¿Dónde se Puede comprar?"
     subtitle="Nuestros productos se pueden encontrar en los siguientes lugares:"
@@ -217,13 +228,16 @@ const meta = {
       },
     ]}
   />
+-->
 
   <!-- HighlightedPosts Widget ******* -->
 
+<!--
   <LatestPosts
     title="Mira nuestro Blog"
     information={`Nuestro blog contiene datos útiles para quienes les interese nuestro producto.`}
   />
+-->
 
   <!-- FAQs Widget ******************* -->
 
@@ -271,6 +285,7 @@ const meta = {
 
   <!-- Stats Widget ****************** -->
 
+<!--
   <Stats
     items={[
       { name: 'Ventas', value: '132K' },
@@ -279,6 +294,7 @@ const meta = {
       { name: 'Seguidores', value: '48.4K' },
     ]}
   />
+-->
 
   <!-- CallToAction Widget *********** -->
 

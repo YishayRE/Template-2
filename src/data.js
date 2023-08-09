@@ -39,11 +39,11 @@ export const headerData = {
           href: '#',
         },
         {
-          text: 'Terms',
+          text: 'Terminos y condiciones',
           href: getPermalink('/terms'),
         },
         {
-          text: 'Privacy policy',
+          text: 'Políticas de privacidad',
           href: getPermalink('/privacy'),
         },
       ],
@@ -108,15 +108,15 @@ export const footerData = {
     },
   ],
   secondaryLinks: [
-    { text: 'Terms', href: getPermalink('/terms') },
-    { text: 'Privacy Policy', href: getPermalink('/privacy') },
+    { text: 'Terminos y condiciones', href: getPermalink('/terms') },
+    { text: 'Políticas de privacidad', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: '#' },
+    { ariaLabel: 'X', icon: 'tabler:brand-twitter', href: '#' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/YishayRE/' },
+    /*{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/YishayRE/' },*/
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm"></span>

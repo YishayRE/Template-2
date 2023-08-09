@@ -1,15 +1,15 @@
 import defaultImage from './assets/images/default.png';
 
 const CONFIG = {
-  name: 'AstroWind',
+  name: 'Zempoala',
 
-  origin: 'https://astrowind.vercel.app',
+  origin: 'https://zempoaladestilado.com/',
   basePathname: '/',
   trailingSlash: false,
 
-  title: 'AstroWind — Free template for create a website with Astro + Tailwind CSS',
+  title: 'Zempoala destilado de pulque',
   description:
-    '🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.',
+    'Zempoala destilado de pulque, es un doble destilado de agave pulquero del estado Hidalgo en México, con un sabor único y un aroma inigualable.',
   defaultImage: defaultImage,
 
   defaultTheme: 'system', // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
