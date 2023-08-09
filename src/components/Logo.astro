@@ -1,6 +1,19 @@
 ---
+import { Picture } from "@astrojs/image/components";
+import logo from "src/assets/images/logos/mariposa.png";
 ---
 
 <span class="self-center ml-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 Pulque</span
->
+  <Picture
+    class="mx-auto"
+    width={35}
+    height={28}
+    widths={[865, 1087]}
+    sizes="(max-width: 10px) 10vw, 10px"
+    aspectRatio="5:4"
+    alt="Logotipo"
+    src={logo}
+    style="float: left;"
+  />
+  &nbsp;&nbsp;Zempoala
+</span>
