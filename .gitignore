@@ -2,6 +2,10 @@
 dist/
 .output/
 
+# IDE files
+.vscode/*
+.idea/*
+
 # dependencies
 node_modules/
 
@@ -23,3 +27,9 @@ package-lock.json
 pnpm-lock.yaml
 
 .astro
+
+#Deploy
+netlify.toml
+.firebaserc
+firebase.json
+.firebase/*
