@@ -12,6 +12,7 @@ import LatestPosts from '~/components/blog/LatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Note2 from '~/components/widgets/Note2.astro';
 
 const meta = {
   title: SITE.title,
@@ -29,7 +30,7 @@ const meta = {
     image={{ src: import('~/assets/images/logos/circulo.png'), alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      <span class="text-accent dark:text-white highlight">Pulque</span> la bebida de los dioses </Fragment>
+      <span class="text-accent highlight">Pulque</span> la bebida de los dioses </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
@@ -42,6 +43,7 @@ const meta = {
 
   <!-- Note Widget ******************* -->
 
+  <Note2 />
   <Note />
 
   <!-- Features Widget *************** -->
@@ -247,7 +249,7 @@ const meta = {
         },
         {
             question: '¿Cuál es el tiempo de producción de cada botella?',
-            answer: 'Cada botella del destilado de pulque de Zempoala tarda al rededor de 8h.'
+            answer: 'Cada botella del destilado de pulque de Zempoala tarda al rededor de 8h por destilado.'
         },
         {
             question: '¿Qué cambios notorios hay en el pulque al tener 2 procesos de destilación envés de 1?',

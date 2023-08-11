@@ -112,14 +112,14 @@ export const footerData = {
     { text: 'Políticas de privacidad', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-twitter', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    /*{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/YishayRE/' },*/
+    { ariaLabel: 'X', icon: 'tabler:brand-twitter', href: 'https://twitter.com/HidalgoZem53346' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/destiladozempoala/' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/destiladozempoala/' },
+    /*{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },*/
+    { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@destiladozempoala' },
   ],
   footNote: `
     <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://github.com/YishayRE/"> YishayJS </a> · All rights reserved.
+    Made by <a class="text-primary hover:underline" href="https://github.com/YishayRE/"> YishayJS </a> · All rights reserved.
   `,
 };
