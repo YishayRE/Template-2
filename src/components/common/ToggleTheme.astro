@@ -1,13 +1,13 @@
 ---
 import { Icon } from 'astro-icon';
-
 import { SITE } from '~/config.mjs';
 
 export interface Props {
   label?: string;
   class?: string;
   iconClass?: string;
-  iconName?: string;
+  iconSun?: string;
+  iconMoon?: string;
 }
 
 const {
@@ -15,14 +15,36 @@ const {
   class:
     className = 'text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center',
   iconClass = 'w-6 h-6',
-  iconName = 'tabler:sun',
+  iconSun = 'tabler:sun',
+  iconMoon = 'tabler:moon'
 } = Astro.props;
 ---
 
 {
   !(SITE?.defaultTheme && SITE.defaultTheme.endsWith(':only')) && (
-    <button type="button" class={className} aria-label={label} data-aw-toggle-color-scheme>
-      <Icon name={iconName} class={iconClass} />
+    <button type="button" style="display:none" class={className} aria-label={label} data-aw-toggle-color-light-scheme>
+      <Icon name={(iconSun)} class={iconClass} />
+    </button>
+    <button type="button" style="display:none" class={className} aria-label={label} data-aw-toggle-color-dark-scheme>
+      <Icon name={(iconMoon)} class={iconClass} />
     </button>
   )
 }
+
+<script is:inline define:vars={{ defaultTheme: SITE.defaultTheme }}>
+  const iconLight = document.querySelector('[data-aw-toggle-color-light-scheme]');
+  const iconDark = document.querySelector('[data-aw-toggle-color-dark-scheme]');
+
+  if (defaultTheme && defaultTheme.endsWith(':only')) {
+    toggleTheme.remove();
+  } else {
+      const isDark = document.documentElement.classList.contains('dark');
+
+      if(isDark)
+        iconLight.style.display = "block";
+      else
+        iconDark.style.display = "block";
+
+        console.log(1)
+  }
+</script>

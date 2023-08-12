@@ -49,12 +49,28 @@ import { SITE } from '~/config.mjs';
       document.querySelector('#header nav')?.classList.toggle('hidden');
     });
 
-    attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
+    attachEvent('[data-aw-toggle-color-dark-scheme]', 'click', function () {
       if (defaultTheme.endsWith(':only')) {
         return;
       }
+
       document.documentElement.classList.toggle('dark');
-      localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+      document.querySelector('[data-aw-toggle-color-light-scheme]').style.display = "block";
+      document.querySelector('[data-aw-toggle-color-dark-scheme]').style.display = "none";
+
+      localStorage.theme = 'dark';
+    });
+
+    attachEvent('[data-aw-toggle-color-light-scheme]', 'click', function () {
+      if (defaultTheme.endsWith(':only')) {
+        return;
+      }
+
+      document.documentElement.classList.toggle('dark');
+      document.querySelector('[data-aw-toggle-color-light-scheme]').style.display = "none";
+      document.querySelector('[data-aw-toggle-color-dark-scheme]').style.display = "block";
+
+        localStorage.theme = 'light';
     });
 
     attachEvent('[data-aw-social-share]', 'click', function (_, elem) {
