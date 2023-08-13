@@ -32,19 +32,19 @@ const {
 }
 
 <script is:inline define:vars={{ defaultTheme: SITE.defaultTheme }}>
-  const iconLight = document.querySelector('[data-aw-toggle-color-light-scheme]');
-  const iconDark = document.querySelector('[data-aw-toggle-color-dark-scheme]');
+  const iconLight = document.querySelectorAll('[data-aw-toggle-color-light-scheme]');
+  const iconDark = document.querySelectorAll('[data-aw-toggle-color-dark-scheme]');
 
   if (defaultTheme && defaultTheme.endsWith(':only')) {
     toggleTheme.remove();
   } else {
       const isDark = document.documentElement.classList.contains('dark');
+      console.log(iconDark[0]);
 
       if(isDark)
-        iconLight.style.display = "block";
+        iconDark.forEach(icon => icon.style.display = "block")
       else
-        iconDark.style.display = "block";
+        iconLight.forEach(icon => icon.style.display = "block");
 
-        console.log(1)
   }
 </script>

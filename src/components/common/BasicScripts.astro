@@ -55,8 +55,8 @@ import { SITE } from '~/config.mjs';
       }
 
       document.documentElement.classList.toggle('dark');
-      document.querySelector('[data-aw-toggle-color-light-scheme]').style.display = "block";
-      document.querySelector('[data-aw-toggle-color-dark-scheme]').style.display = "none";
+      document.querySelectorAll('[data-aw-toggle-color-light-scheme]').forEach(icon => icon.style.display = "block");
+      document.querySelectorAll('[data-aw-toggle-color-dark-scheme]').forEach(icon => icon.style.display = "none");
 
       localStorage.theme = 'dark';
     });
@@ -67,8 +67,8 @@ import { SITE } from '~/config.mjs';
       }
 
       document.documentElement.classList.toggle('dark');
-      document.querySelector('[data-aw-toggle-color-light-scheme]').style.display = "none";
-      document.querySelector('[data-aw-toggle-color-dark-scheme]').style.display = "block";
+      document.querySelectorAll('[data-aw-toggle-color-light-scheme]').forEach(icon => icon.style.display = "none");
+      document.querySelectorAll('[data-aw-toggle-color-dark-scheme]').forEach(icon => icon.style.display = "block");
 
         localStorage.theme = 'light';
     });
