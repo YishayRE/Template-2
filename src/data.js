@@ -112,10 +112,10 @@ export const footerData = {
     { text: 'Políticas de privacidad', href: getPermalink('/privacy') },
   ],
   socialLinks: [
+    { ariaLabel: 'WhatsApp', icon: 'tabler:brand-whatsapp', href: 'https://wa.me/527202013684?text=Hola%20quiero%20comprar%20destilado%20de%20pulque%20Zempoala' },
     { ariaLabel: 'X', icon: 'tabler:brand-twitter', href: 'https://twitter.com/HidalgoZem53346' },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/destiladozempoala/' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/destiladozempoala/' },
-    /*{ ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },*/
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=61550499830081&mibextid=ZbWKwL' },
     { ariaLabel: 'TikTok', icon: 'tabler:brand-tiktok', href: 'https://www.tiktok.com/@destiladozempoala' },
   ],
   footNote: `
