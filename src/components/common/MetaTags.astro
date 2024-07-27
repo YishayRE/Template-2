@@ -52,7 +52,11 @@ const image =
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+<meta name="keywords" content="destilado, destilado de pulque, destilado pulque, zempoala, destilado zempoala, destilado de pulque zempoala, zempoala destilado, pulque zempoala, zempoala pulque, zempoala destilado de pulque, pulque">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="author" content="Iván Martín Barbero">
+<meta name="lang" content="es">
+<meta name="news_keywords" content="destilado, destilado de pulque, destilado pulque, zempoala, destilado zempoala, destilado de pulque zempoala, zempoala destilado, pulque zempoala, zempoala pulque, zempoala destilado de pulque, pulque">
 <AstroSeo
   title={title}
   titleTemplate={dontUseTitleTemplate ? '%s' : `%s — ${SITE.name}`}
@@ -92,10 +96,9 @@ const image =
 
 {SITE.splitbeeAnalytics?.enabled && <SplitbeeAnalytics {...SITE.splitbeeAnalytics} />}
 
-<link rel="shortcut icon" href={getAsset('/favicon.ico')} />
-
-<!--
 <link rel="icon" type="image/svg+xml" href={getAsset('/favicon.svg')} />
-<link rel="mask-icon" href={getAsset('/favicon.svg')} color="#8D46E7" />
+<link rel="apple-touch-icon" href={getAsset('/favicon.ico')} />
+<link rel="apple-touch-icon-precomposed" href={getAsset('/favicon.ico')} />
+<link rel="shortcut icon" href={getAsset('/favicon.ico')} />
+<link rel="mask-icon" href={getAsset('/favicon.svg')} color="#CB6221" />
 <link rel="sitemap" href={getAsset('/sitemap-index.xml')} />
- -->
